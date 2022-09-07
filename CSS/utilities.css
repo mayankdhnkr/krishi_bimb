@@ -1,0 +1,12 @@
+/* Display Property */
+.inline{
+    display: inline-block;
+}
+
+/* Positioning Property*/
+.absolute{
+    position: absolute;
+}
+.relative {
+    position:relative;
+}

@@ -12,10 +12,111 @@
 
     <!-- Style Sheets -->
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/utilities.css">
 
 </head>
 <body>
-    
+
+    <!-- Hero Section -->
+    <section id="hero-section">
+    <div class="container-fluid hero-background">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img src="Images/Krishi Bimb Logo.png" alt="KrishiBimb-logo" class="ms-5 me-2">
+                    <span class="navbar-logo-text">Krishi Bimb</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto me-5">
+                        <li class="nav-item mx-3">
+                            <a href="#" class="nav-link">How it works</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="#" class="nav-link">Who we are</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="#" class="nav-link">What we do</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a href="#" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+
+            
+                    <button class="btn btn-lg btn-primary mx-2 ms-4">Sign In</button>
+                    <button class="btn btn-lg btn-outline-primary mx-2 me-5">Sign Up</button>
+                
+                </div>
+            </div>
+        </nav>
+
+        <!-- <img src="Images/Background.png" alt="Background Images" class="absolute hero-background"> -->
+        <div class="flex-row mt-5 pt-5 ms-5 ps-5 title-text">
+            <h1 class="hero-heading">Farmer to Buyer</h1>
+            <h4 class="hero-subheading">In a Snap</h4>
+        </div>
+        <div class="flex-row mt-5 ms-5 ps-5 title-text">
+            <button class="btn btn-lg btn-primary me-2 choice-button">Farmer</button>
+            <button class="btn btn-lg btn-primary ms-2 choice-button">Buyer</button>
+        </div>        
+    </div>
+    </section>
+
+    <!-- How it works Section -->
+    <section id="how">
+        <div class="container-fluid">
+            <h3 class="how-heading mb-5">How it works</h3>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mt-5 px-5">
+                    <div class="features-card">
+                        <img src="Images/Wheat Packet.svg" alt="Wheat Packet Illustrations" class="mb-4">
+                        <h4>Post your products</h4>
+                        <p>Farmer can directly post the product he/she want to sell and it will be up for bidding by buyers.</p>
+                        <button class="btn btn-outline-primary mt-4">Learn More</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 mt-5 px-4">
+                    <div class="features-card">
+                        <img src="Images/Dollar Sign.svg" alt="Dollar Sign Illustrations" class="mb-4">
+                        <h4>But your required crop</h4>
+                        <p>Buyers can bid for their desired product and the buyer who placed the higher bid will get the product.</p>
+                        <button class="btn btn-outline-primary mt-4">Learn More</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 mt-5 px-5">
+                    <div class="features-card">
+                        <img src="Images/Delivery.svg" alt="Delivery Truck Illustrations" class="mb-4">
+                        <h4>Hassel free devlivery</h4>
+                        <p>We will ship your bought product to you without any problem.</p>
+                        <button class="btn btn-outline-primary mt-4">Learn More</button>
+                    </div>        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="who">
+        <div class="container-fluid">
+            <div class="row d-flex flex-row">
+                <div class="col-lg-6 d-flex flex-column gx-5 whoweare-image">
+                    <!-- <img src="Images/who are we.png" alt="Who we are image" class="whoweare-image"> -->
+                </div>
+                <div class="col-lg-6 gx-5 align-self-center">
+                    <h3 class="who-heading mb-5">How it works</h3>
+                    <p class="who-para">We are KrishiBimb and the problem we tried to tackle is E-Trading in Agriculture sector.
+                        <br><br>Started with a vision to connect Farmers and all across India to Buyers across the country, KrishiBimb intends to play a critical role in crafting the future of Agriculture sector from a business point of view. 
+                        <br><br>Driven by the idea of Atma Nirbhar Modern Bharat, that is self-sufficient modern India as a central theme. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="app.js"></script>
 </body>
 </html>

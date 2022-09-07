@@ -1,0 +1,69 @@
+/* Navbar */
+.nav-link{
+    color: white;
+    font-size: 1.2rem;
+}
+.navbar-brand{
+    color: white;   
+}
+.navbar-brand{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+/* Hero Section */
+.hero-background{
+    background-image: url("Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.hero-heading{
+    font-size: 5rem;
+    font-weight: 900;
+    color: white;
+    -webkit-text-stroke: 0.5px #000000;
+}
+.hero-subheading{
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+    -webkit-text-stroke: 0.5px #000000;
+}
+.choice-button{
+    width: 10%;
+}
+.title-text{
+    position: relative;
+    top:75px;
+}
+
+/* How it works Section */
+#how{
+    padding: 5%;
+}
+.how-heading{
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+}
+.features-card{
+    text-align: center;
+}
+
+/* Who we are Section */
+#who{
+    padding: 5%;
+}
+.whoweare-image{
+    background-image: url("who.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+.who-heading{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.who-para{
+    font-size: 1.25rem;
+}
