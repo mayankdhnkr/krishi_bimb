@@ -1,7 +1,29 @@
+/* Bootstrap changes */
+.btn-primary{
+    background-color: #219653;
+    border: #219653;
+}
+.btn-outline-primary{
+    color: #219653;
+    border-color: #219653;
+}
+.signup-btn{
+    color: white;
+    border-color: white;
+}
+
+/* HTML Elements */
+html{
+    scroll-behavior: smooth;
+}
+
 /* Navbar */
-.nav-link{
+.links-navbar{
     color: white;
     font-size: 1.2rem;
+}
+.nav-link:hover{
+    color: #219653;
 }
 .navbar-brand{
     color: white;   
@@ -91,8 +113,18 @@
 .footer-email{
     font-size: 2rem;
     font-weight: 700;
+    color: #2d2d2d;
+    text-decoration: none;
+}
+.footer-email:hover{
     color: #219653;
 }
 .footer-icon{
+    color: #2d2d2d;
+}
+.footer-icon:hover{
     color: #219653;
+}
+.wave{
+    width: 100%;
 }
