@@ -53,6 +53,7 @@
 /* Who we are Section */
 #who{
     padding: 5%;
+    background-color: #E6F1E5;
 }
 .whoweare-image{
     background-image: url("who.png");
@@ -66,4 +67,32 @@
 }
 .who-para{
     font-size: 1.25rem;
+}
+
+/* What we do Section */
+#what{
+    margin-top: 7.5%;
+    padding: 5%;
+    background-color: #E6F1E5;
+}
+.what-img{
+    filter: brightness(85%);
+}
+
+/*Footer Section*/
+#footer{
+    padding: 5%;
+}
+.subheading-footer{
+    margin-bottom: 20px;
+    color: #7C7C7C;
+    font-weight: 700;
+}
+.footer-email{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #219653;
+}
+.footer-icon{
+    color: #219653;
 }
