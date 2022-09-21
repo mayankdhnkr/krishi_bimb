@@ -36,6 +36,8 @@ html{
 .hero-background{
     background-image: url("Background.png");
     background-repeat: no-repeat;
+    position: relative;
+    bottom: 50px;
     background-size: cover;
     height: 100vh;
 }
@@ -56,7 +58,7 @@ html{
 }
 .title-text{
     position: relative;
-    top:75px;
+    top:175px;
 }
 
 /* How it works Section */
