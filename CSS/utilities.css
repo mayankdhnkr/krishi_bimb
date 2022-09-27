@@ -1,0 +1,31 @@
+/* Buttons */
+
+.btn-primary {
+    background-color: #219653;
+    border-color: #219653;
+}
+.btn-primary:hover{
+    background-color: #219653;
+    border-color: #219653;
+}
+
+.btn-outline-primary {
+    border-color: #219653;
+    color: #219653;
+}
+
+/* Navbar */
+.links-navbar {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.nav-link:hover {
+    color: #219653;
+}
+
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
