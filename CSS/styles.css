@@ -4,12 +4,19 @@ html{
 }
 
 /* Navbar */
-.navbar-brand {
-    color: white;
+nav{
+    background-color: white;
+}
+.links-navbar {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.nav-link:hover {
+    color: #219653;
 }
 .signup-btn {
-    color: white;
-    border-color: white;
+    color: #219653;
+    border-color: #219653;
 }
 
 /* Hero Section */
@@ -32,9 +39,6 @@ html{
     font-weight: 900;
     color: white;
     -webkit-text-stroke: 0.5px #000000;
-}
-.choice-button{
-    width: 10%;
 }
 .title-text{
     position: relative;
@@ -109,4 +113,23 @@ html{
 }
 .wave{
     width: 100%;
+}
+
+/* Responsive View */
+@media only screen and (max-width: 756px) {
+    body{
+        text-align: center;
+    }
+    #footer{
+        text-align: start;
+    }
+    .footer-email {
+        font-size: 1.5rem;
+    }
+    .footer-link{
+        margin-right: 15px;
+    }
+    nav{
+        background-color: white;
+    }
 }
