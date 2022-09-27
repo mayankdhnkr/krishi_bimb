@@ -56,8 +56,19 @@
     font-weight: 700;
 }
 
+/* Forms */
+.form-label{
+    font-weight: 600;
+}
+
 /* Product Page */
 .product-list {
     width: 60%;
     margin: 0 auto;
+}
+
+@media only screen and (max-width: 756px) {
+    .button-tabs{
+        width: 70%;
+    }
 }
