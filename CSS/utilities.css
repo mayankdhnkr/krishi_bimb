@@ -1,18 +1,24 @@
 /* Buttons */
 
-.btn-primary {
-    background-color: #219653;
-    border-color: #219653;
+.btn-primary{
+    --bs-btn-bg: #219653;
+    --bs-btn-border-color: #219653;
+    --bs-btn-hover-bg: white;
+    --bs-btn-hover-border-color: #219653;
+    --bs-btn-hover-color:#219653;
+    --bs-btn-active-bg: white;
+    --bs-btn-active-border-color:#219653;
 }
-.btn-primary:hover{
-    background-color: #219653;
-    border-color: #219653;
+.btn-outline-primary {
+    --bs-btn-border-color: #219653;
+    --bs-btn-color: #219653;
+    --bs-btn-hover-bg: #219653;
+    --bs-btn-hover-border-color: #219653;
+    --bs-btn-hover-color: white;
+    --bs-btn-active-bg: #219653;
+    --bs-btn-active-border-color: #219653;
 }
 
-.btn-outline-primary {
-    border-color: #219653;
-    color: #219653;
-}
 
 /* Navbar */
 .links-navbar {
@@ -24,8 +30,43 @@
     color: #219653;
 }
 
-
 .navbar-brand {
     font-size: 1.8rem;
     font-weight: 700;
+}
+.avatar {
+    width: 48px;
+    border-radius: 100%
+}
+
+/* Heading */
+.heading {
+    font-size: 4rem;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+/*Multiple Button Tab */
+.button-tabs {
+    width: 30%;
+}
+
+/* Cards */
+.course-image {
+    width: 100%;
+    object-fit: contain;
+}
+.card-link {
+    text-decoration: none;
+    color: black;
+}
+.price {
+    font-weight: 700;
+}
+
+/* Product Page */
+.product-list {
+    width: 60%;
+    margin: 0 auto;
 }

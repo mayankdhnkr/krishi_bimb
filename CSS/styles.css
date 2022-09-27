@@ -1,25 +1,18 @@
-/* Bootstrap changes */
-.btn-primary{
-    background-color: #219653;
-    border: #219653;
-}
-.btn-outline-primary{
-    color: #219653;
-    border-color: #219653;
-}
-.signup-btn{
-    color: white;
-    border-color: white;
-}
-
 /* HTML Elements */
 html{
     scroll-behavior: smooth;
 }
 
 /* Navbar */
+nav {
+    background-color: rgb(33, 150, 83, 0.7);
+}
 .navbar-brand {
     color: white;
+}
+.signup-btn {
+    color: white;
+    border-color: white;
 }
 
 /* Hero Section */
