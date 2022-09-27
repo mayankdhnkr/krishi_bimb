@@ -1,0 +1,18 @@
+.bgimg{
+    background-image: url("login-signup.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+h2{
+    font-weight: 700;
+}
+.signin{
+    font-weight: 500;
+}
+.field{
+    padding: 10% 5% 0
+    ;
+}
+.signin{
+    color: #219653;
+}

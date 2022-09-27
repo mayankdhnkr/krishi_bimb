@@ -1,0 +1,34 @@
+/* Navbar */
+
+.avatar {
+    width: 48px;
+    border-radius: 100%
+}
+
+/* Heading */
+.heading {
+    font-size: 4rem;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+/* Button Tab */
+.button-tabs {
+    width: 30%;
+}
+
+.fields{
+    width: 70%;
+    margin: auto;
+}
+
+#upload-image{
+    height: 160px;
+    width: 250px;
+    background-position: center;
+    background-size: cover;
+}
+.hide-image{
+    display: none;
+}
