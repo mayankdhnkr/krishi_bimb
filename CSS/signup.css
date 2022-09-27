@@ -1,7 +1,17 @@
-.bgimg{
+.bgimg1{
     background-image: url("login-signup.png");
     height: 100vh;
     background-repeat: no-repeat;
+}
+.bgimg2 {
+    background-image: url("mobileview-signin.png");
+    height: 100vh;
+    width: 300px;
+    background-repeat: no-repeat;
+    height: 100px;
+    margin-top: 50px;
+    margin: 50px auto 0;
+
 }
 h2{
     font-weight: 700;
@@ -10,9 +20,11 @@ h2{
     font-weight: 500;
 }
 .field{
-    padding: 10% 5% 0
-    ;
+    padding: 5% 5% 0;
 }
 .signin{
     color: #219653;
+}
+.login-heading{
+    font-weight: 700;
 }

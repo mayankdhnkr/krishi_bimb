@@ -22,11 +22,15 @@
 <body>
     
     <div class="row d-flex flex-row g-0">
-        <div class="col-lg-6 bgimg">
+        <div class="col-lg-6 bgimg1 d-none d-lg-block">
+            
+        </div>
+        <div class="col-lg-6 bgimg2 d-block d-lg-none">
             
         </div>
         <div class="col-lg-6 field">
-            <h1 class="mb-5 mx-auto d-inline-block">Log In</h1>
+            <img src="CSS/mobileview-signin.png" alt="" class="d-none d-lg-block">
+            <h1 class="my-4 mx-auto login-heading">Log In</h1>
             
             <h4>Email</h4>
             <input type="email" class="form-control form-control-lg mb-4" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -36,8 +40,8 @@
             
             <h6>Forgot Password?</h6>
             <div class="d-grid mt-5">
-            <button class="btn btn-lg btn-primary mb-3">Sign Up</button>
-            <p>Already Registered? <span class="signin ps-1">Sign up</span></p>
+            <button class="btn btn-lg btn-primary mb-3">Log in</button>
+            <p>Dont have an Account? <span class="signin ps-1"><a href="signup.html">Sign up</a></span></p>
             </div>
         </div>
     </div>
