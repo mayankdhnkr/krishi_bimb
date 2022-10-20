@@ -19,6 +19,13 @@
     --bs-btn-active-border-color: #219653;
 }
 
+.error{
+    color: #EB5757;
+}
+.success {
+    color: #219653;
+}
+
 
 /* Navbar */
 .navbar-brand {
