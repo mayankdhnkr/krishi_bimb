@@ -81,7 +81,6 @@
                 $result = mysqli_query($db, "SELECT * FROM crops ORDER BY id DESC");
                 while($user_data = mysqli_fetch_array($result)) {
                     $img="uploadimage/".$user_data["crop_imagename"];
-                    $id=$user_data["id"];
                     $name=$user_data["crop_name"];
                     $stock=$user_data["crop_stock"];
                     $price=$user_data["crop_price"];
@@ -101,23 +100,12 @@
                     echo "              <p class='card-text mb-0'><small class='text-muted'>Price</small></p>";            
                     echo "              <div class='d-flex'>";            
                     echo "                  <h2 class='price'>".$price."</h2>";            
-                    ?>
-                                            <form action="productpage.php" method="post" class="myform">
-                                                <button class='btn btn-primary' type="submit" name="buybtn">Buy</button>       
-                                            </form>
-                    <?php
+                    echo "                  <a href='stock.php?id=$user_data[id]' class='ms-auto'><button class='btn btn-primary'>Buy</button></a>";            
                     echo "              </div>";            
                     echo "          </div>";            
                     echo "      </div>";            
                     echo "  </div>";            
-                    echo "</div>";
-                    if(isset($_POST["buybtn"])){
-                        $stock=$stock-1;
-                        $db = mysqli_connect("localhost", "root", "", "krishibimb");
-                        $sql = "UPDATE crops SET crop_stock='$stock' WHERE id=$id";
-                        mysqli_query($db, $sql); 
-                        $_POST = array(); 
-                    }                    
+                    echo "</div>";                    
                 }
             ?>
         </div>
