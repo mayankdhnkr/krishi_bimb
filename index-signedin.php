@@ -52,6 +52,14 @@
                     </ul>
 
                     <ul class="navbar-nav ms-auto d-flex">
+                        <li class="navbar-item align-self-center fa-2x">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li class="navbar-item">
                         <a href="" class="nav-link"><img src="Images/Mayank.png" alt="Character Avatar" class="avatar"></a>                        
                     </li> 

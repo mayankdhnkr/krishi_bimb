@@ -1,7 +1,7 @@
 <?php
     include_once("config.php");
     $result = mysqli_query($mysqli, "SELECT * FROM user ORDER BY user_id DESC");
-    
+    session_start();
     $cnt=0;
     $email=$_POST['user_email'];
     $password=$_POST['user_password'];
@@ -26,11 +26,15 @@
                 $cnt=3;
             }
     }
+    $_SESSION["loggedin_username"]=$user_data["user_name"];
+    $img= "uploadimage/".$user_data["user_image"];
+    $_SESSION["loggedin_image"]=$img;
     
     if($cnt==1){
+        
         echo '<script>';
         echo 'alert("Signed in successfully. Welcome '. $user_data['user_name']. ' ");';
-        echo 'window.location = "http://localhost/KrishiBimb/index-signedin.html";';
+        echo 'window.location = "http://localhost/KrishiBimb/index-signedin.php";';
         echo '</script>';
     }
     else if($cnt==2){

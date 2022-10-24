@@ -48,50 +48,39 @@
     <div class="d-flex">
         <h1 class="heading mt-3">Add Crop</h1>
     </div>
-
-    <div class="tabs mt-3">
-        <div class="button-tabs row d-flex flex-row g-0 mx-auto">
-            <div class="col-6 d-inline-flex justify-content-around">
-                <button class="btn btn-lg btn-primary">Add Crop</button>
+    <form action="addcrop.php" method="post" >
+        <div class="d-flex flex-row row flex-row-reverse gx-5 fields mt-5">
+            <div class="col-lg-6 mb-5">
+                <h5 class="mb-4">Upload Image</h5>
+                <div id="upload-image">
+                    <img src="Images/uploadimag.svg" id="placeholder-image">
+                </div>
+                    <input class="mt-4 form-control" type="file" id="img-upload" name="choosefile">
             </div>
-            <div class="col-6 d-inline-flex justify-content-around">
-                <a href="farmer-transactions.html"><button class="btn btn-lg btn-outline-primary">Transactions</button></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="d-flex flex-row row flex-row-reverse gx-5 fields mt-5">
-        <div class="col-lg-6 mb-5">
-            <h5 class="mb-4">Upload Image</h5>
-            <div id="upload-image">
-                <img src="Images/uploadimag.svg" id="placeholder-image">
-            </div>
-            <input class="mt-4 form-control" type="file" id="img-upload">
-        </div>
-        <div class="col-lg-6 mb-5">
-            <div class="mb-3">
-                <label for="formGroupExampleInput" class="form-label">Crop Name</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-            </div>
-            <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">Price</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
-            </div>
-            <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">Stock</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
-            </div>
-            <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">Crop Description</label>
-                <textarea type="text" class="form-control" placeholder="Another input placeholder" rows="3"></textarea>
-            </div>
-            
-            <div class="buttons-grp">
-                <button class="btn btn-lg btn-primary">Post</button>
-                <button class="btn btn-lg btn-outline-primary">Cancel</button>
+            <div class="col-lg-6 mb-5">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Crop Name</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder" name="crop_name">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Price</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder" name="crop_price">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Stock</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder" name="crop_stock">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Crop Description</label>
+                    <textarea type="text" class="form-control" placeholder="Another input placeholder" rows="3" name="crop_desc"></textarea>
+                </div>
+                <div class="buttons-grp">
+                    <button type="submit" name="uploadfile" class="btn btn-lg btn-primary">Post</button>
+                    <button class="btn btn-lg btn-outline-primary">Cancel</button>
+                </div>
             </div>
         </div>
-    </div>
+    </form>
 
     <script src="JS/addcrop.js"></script>
 </body>
