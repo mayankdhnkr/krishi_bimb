@@ -17,14 +17,14 @@
     
     if (move_uploaded_file($tempname, $folder)) {
         echo '<script>';
-        echo 'alert("Account created succesfully.");';
-        // echo 'window.location = "http://localhost/KrishiBimb/login.html";';
+        echo 'alert("Crop Added succesfully.");';
+        echo 'window.location = "http://localhost/KrishiBimb/add.php";';
         echo '</script>';
     }
     else{
         echo '<script>';
         echo 'alert("Wrong entries presented.");';
-        // echo 'window.location = "http://localhost/KrishiBimb/addcrop.html";';
+        echo 'window.location = "http://localhost/KrishiBimb/add.php";';
         echo '</script>';
     }
 ?>

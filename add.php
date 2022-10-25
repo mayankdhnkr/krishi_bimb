@@ -20,6 +20,8 @@
 
 </head>
 <body>
+    <?php session_start(); ?>
+
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a href="index-signedin.php" class="navbar-brand">
@@ -32,14 +34,22 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto d-flex">
-                    <li class="navbar-item">
-                        <a href="" class="nav-link"><img src="Images/Mayank.png" alt="Character Avatar" class="avatar"></a>                        
-                    </li> 
-                    <li class="navbar-item align-self-center">
-                        <a href="profile.html" class="nav-link">
-                            <h5>Mayank</h5>
+                    <li class="navbar-item d-flex align-items-center mx-auto">
+                        <a href="" class="nav-link me-sm-3 me-lg-0">
+                            <?php    
+                                echo '<img src="'.$_SESSION["loggedin_image"].'" alt="Character Avatar" class="avatar">';
+                            ?>
                         </a>
-                    </li>
+                        <a href="profile.html" class="nav-link me-sm-3 me-lg-0">
+                            <h5><?php echo $_SESSION["loggedin_username"]; ?></h5>
+                        </a>                        
+                        <div class="dropdown dropdown-center">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"></button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                            </ul>
+                        </div>
+                    </li> 
                 </ul>
             </div>
         </div>
@@ -48,7 +58,7 @@
     <div class="d-flex">
         <h1 class="heading mt-3">Add Crop</h1>
     </div>
-    <form action="addcrop.php" method="post" enctype="multipart/form-data">
+    <form action="addcrop.php" method="post" >
         <div class="d-flex flex-row row flex-row-reverse gx-5 fields mt-5">
             <div class="col-lg-6 mb-5">
                 <h5 class="mb-4">Upload Image</h5>
