@@ -24,7 +24,7 @@
 
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a href="index.html" class="navbar-brand">
+            <a href="index-signedin.php" class="navbar-brand">
                 <img src="Images/Krishi Bimb Logo.png" alt="KrishiBimb-logo" class="ms-5 me-2">
                 <span class="navbar-logo-text">Krishi Bimb</span>
             </a>
@@ -34,26 +34,22 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto d-flex">
-                    <li class="navbar-item align-self-center fa-2x">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"></button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="logout.php">Logout</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="" class="nav-link">
+                    <li class="navbar-item d-flex align-items-center mx-auto">
+                        <a href="" class="nav-link me-sm-3 me-lg-0">
                             <?php    
                                 echo '<img src="'.$_SESSION["loggedin_image"].'" alt="Character Avatar" class="avatar">';
                             ?>
-                        </a>                        
-                    </li> 
-                    <li class="navbar-item align-self-center">
-                        <a href="profile.html" class="nav-link">
-                            <h5><?php echo $_SESSION["loggedin_username"]; ?></h5>
                         </a>
-                    </li>
+                        <a href="profile.html" class="nav-link me-sm-3 me-lg-0">
+                            <h5><?php echo $_SESSION["loggedin_username"]; ?></h5>
+                        </a>                        
+                        <div class="dropdown dropdown-center">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"></button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                            </ul>
+                        </div>
+                    </li> 
                 </ul>
             </div>
         </div>
