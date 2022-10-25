@@ -51,6 +51,7 @@
                     </li> 
                     <li class="navbar-item align-self-center">
                         <a href="profile.html" class="nav-link">
+                            <h5><?php echo $_SESSION["loggedin_username"]; ?></h5>
                         </a>
                     </li>
                 </ul>
