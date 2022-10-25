@@ -5,8 +5,8 @@
     $stock=$_POST['crop_stock'];
     $desc=$_POST['crop_desc'];
 
-    $filename = $_FILES["choosefile"]["name"];
-    $tempname = $_FILES["choosefile"]["tmp_name"];  
+    $filename = $_FILES["fileupload"]["name"];
+    $tempname = $_FILES["fileupload"]["tmp_name"];  
     $folder = "uploadimage/".$filename;
     
     $db = mysqli_connect("localhost", "root", "", "krishibimb");

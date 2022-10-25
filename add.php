@@ -54,18 +54,20 @@
             </div>
         </div>
     </nav>
+
     
     <div class="d-flex">
         <h1 class="heading mt-3">Add Crop</h1>
     </div>
-    <form action="addcrop.php" method="post" >
+
+    <form action="addcrop.php" method="post" enctype="multipart/form-data">
         <div class="d-flex flex-row row flex-row-reverse gx-5 fields mt-5">
             <div class="col-lg-6 mb-5">
                 <h5 class="mb-4">Upload Image</h5>
                 <div id="upload-image">
                     <img src="Images/uploadimag.svg" id="placeholder-image">
                 </div>
-                    <input class="mt-4 form-control" type="file" id="img-upload" name="choosefile">
+                <input class="mt-4 form-control" type="file" id="img-upload" name="fileupload">
             </div>
             <div class="col-lg-6 mb-5">
                 <div class="mb-3">
@@ -84,13 +86,15 @@
                     <label for="formGroupExampleInput2" class="form-label">Crop Description</label>
                     <textarea type="text" class="form-control" placeholder="Another input placeholder" rows="3" name="crop_desc"></textarea>
                 </div>
+
                 <div class="buttons-grp">
-                    <button type="submit" name="uploadfile" class="btn btn-lg btn-primary">Post</button>
+                    <button class="btn btn-lg btn-primary" type="submit">Post</button>
                     <button class="btn btn-lg btn-outline-primary">Cancel</button>
                 </div>
             </div>
         </div>
     </form>
+    
 
     <script src="JS/addcrop.js"></script>
 </body>
