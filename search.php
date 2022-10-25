@@ -100,9 +100,9 @@
                     echo "          <div class='card-body'>";            
                     echo "              <h5 class='card-title'>".$name."</h5>";            
                     echo "              <p class='card-text'>".$desc."</p>";            
-                    echo "              <p class='card-text'><small class='text-muted'>Posted on      ".$posted."</small></p>";            
-                    echo "              <p class='card-text'><small class='text-muted'>Posted on      :   </small>".$posted."</p>";            
-                    echo "              <p class='card-text'><small class='text-muted'>Stock Left     :   </small>".$stock."</p>";            
+                    echo "              <p class='card-text'><small class='text-muted'>Posted on      </small>".$posted."</p>";           
+                    echo "              <p class='card-text'><small class='text-muted'>Stock Left     :   </small>".$stock."</p>";
+                    echo "              <p class='card-text mb-0'><small class='text-muted'>Price</small></p>";            
                     echo "              <div class='d-flex'>";            
                     echo "                  <h2 class='price'>".$price."</h2>";            
                     echo "                  <a href='stock.php?id=$user_data[id]' class='ms-auto'><button class='btn btn-primary'>Buy</button></a>";                        
