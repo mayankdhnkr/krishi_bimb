@@ -20,6 +20,7 @@
 
 </head>
 <body>
+    <?php session_start(); ?>
 
     <!-- Hero Section -->
     <section id="hero-section">
@@ -61,11 +62,15 @@
                         </div>
                     </li>
                     <li class="navbar-item">
-                        <a href="" class="nav-link"><img src="Images/Mayank.png" alt="Character Avatar" class="avatar"></a>                        
+                        <a href="" class="nav-link">
+                            <?php    
+                                echo '<img src="'.$_SESSION["loggedin_image"].'" alt="Character Avatar" class="avatar">';
+                            ?>
+                        </a>                        
                     </li> 
                     <li class="navbar-item align-self-center">
                         <a href="profile.html" class="nav-link">
-                            <h5>Mayank</h5>
+                            <h5><?php echo $_SESSION["loggedin_username"]; ?></h5>
                         </a>
                     </li>
                 </ul>
@@ -81,7 +86,7 @@
         </div>
         <div class="flex-row mt-5 ms-lg-5 ps-lg-5 title-text">
             <a href="addcrop.html"><button class="btn btn-lg btn-primary me-2 choice-button">Farmer</button></a>
-            <a href="productpage.html"><button class="btn btn-lg btn-primary ms-2 choice-button">Buyer</button></a>
+            <a href="productpage.php"><button class="btn btn-lg btn-primary ms-2 choice-button">Buyer</button></a>
         </div>        
     </div>
     </section>

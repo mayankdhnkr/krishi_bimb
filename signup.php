@@ -10,8 +10,6 @@
     
     $db = mysqli_connect("localhost", "root", "", "krishibimb");
     
-    $db = mysqli_connect("localhost", "root", "", "krishibimb");
-    
     $sql = "INSERT INTO user (user_name,user_email,user_password,user_image) VALUES ('$name','$email','$password','$filename')";
     
     mysqli_query($db, $sql);    
@@ -25,7 +23,7 @@
     else{
         echo '<script>';
         echo 'alert("Wrong entries presented.");';
-        echo 'window.location = "http://localhost/KrishiBimb/addcrop.html";';
+        echo 'window.location = "http://localhost/KrishiBimb/signup.html";';
         echo '</script>';
     }
 ?>

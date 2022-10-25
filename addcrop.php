@@ -5,8 +5,6 @@
     $stock=$_POST['crop_stock'];
     $desc=$_POST['crop_desc'];
 
-    $msg = "default";
-
     $filename = $_FILES["choosefile"]["name"];
     $tempname = $_FILES["choosefile"]["tmp_name"];  
     $folder = "uploadimage/".$filename;
@@ -15,18 +13,18 @@
     
     $sql = "INSERT INTO crops (crop_name,crop_price,crop_imagename,crop_stock,crop_desc) VALUES ('$name','$price','$filename','$stock','$desc')";
     
-    mysqli_query($db, $sql);       
+    mysqli_query($db, $sql);    
     
     if (move_uploaded_file($tempname, $folder)) {
         echo '<script>';
-        echo 'alert("Crop added succesfully.");';
-        echo 'window.location = "http://localhost/KrishiBimb/productpage.php";';
+        echo 'alert("Account created succesfully.");';
+        // echo 'window.location = "http://localhost/KrishiBimb/login.html";';
         echo '</script>';
     }
     else{
         echo '<script>';
         echo 'alert("Wrong entries presented.");';
-        echo 'window.location = "http://localhost/KrishiBimb/addcrop.html";';
+        // echo 'window.location = "http://localhost/KrishiBimb/addcrop.html";';
         echo '</script>';
     }
 ?>
