@@ -8,11 +8,8 @@
     $tempname = $_FILES["user_pp"]["tmp_name"];  
     $folder = "uploadimage/".$filename;
     
-    $db = mysqli_connect("localhost", "root", "", "krishibimb");
-    
-    $sql = "INSERT INTO user (user_name,user_email,user_password,user_image) VALUES ('$name','$email','$password','$filename')";
-    
-    mysqli_query($db, $sql);    
+    include_once("config.php");    
+    mysqli_query($mysqli, "INSERT INTO user (user_name,user_email,user_password,user_image) VALUES ('$name','$email','$password','$filename')");    
     
     if (move_uploaded_file($tempname, $folder)) {
         echo '<script>';

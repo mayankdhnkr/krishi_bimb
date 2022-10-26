@@ -79,8 +79,10 @@
             <!-- Php starts from here -->
             <?php
                 $search=$_POST["search"];
-                $db = mysqli_connect("localhost", "root", "", "krishibimb");
-                $result = mysqli_query($db, "SELECT * FROM crops WHERE crop_name LIKE '%$search%'");
+
+                include_once("config.php");
+                $result = mysqli_query($mysqli, "SELECT * FROM crops WHERE crop_name LIKE '%$search%'");
+                
                 while($user_data = mysqli_fetch_array($result)) {
                     $img="uploadimage/".$user_data["crop_imagename"];
                     $name=$user_data["crop_name"];

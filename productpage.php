@@ -73,8 +73,9 @@
             
             <!-- Php starts from here -->
             <?php
-                $db = mysqli_connect("localhost", "root", "", "krishibimb");
-                $result = mysqli_query($db, "SELECT * FROM crops ORDER BY id DESC");
+                include_once("config.php");
+                $result = mysqli_query($mysqli, "SELECT * FROM crops ORDER BY id DESC");
+                
                 while($user_data = mysqli_fetch_array($result)) {
                     $img="uploadimage/".$user_data["crop_imagename"];
                     $name=$user_data["crop_name"];
