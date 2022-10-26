@@ -14,13 +14,13 @@
     if (move_uploaded_file($tempname, $folder)) {
         echo '<script>';
         echo 'alert("Account created succesfully.");';
-        echo 'window.location = "http://localhost/KrishiBimb/login.html";';
+        echo 'window.location = "login.html";';
         echo '</script>';
     }
     else{
         echo '<script>';
         echo 'alert("Wrong entries presented.");';
-        echo 'window.location = "http://localhost/KrishiBimb/signup.html";';
+        echo 'window.location = "signup.html";';
         echo '</script>';
     }
 ?>

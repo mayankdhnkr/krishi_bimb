@@ -34,19 +34,19 @@
         
         echo '<script>';
         echo 'alert("Signed in successfully. Welcome '. $user_data['user_name']. ' ");';
-        echo 'window.location = "http://localhost/KrishiBimb/index-signedin.php";';
+        echo 'window.location = "index-signedin.php";';
         echo '</script>';
     }
     else if($cnt==2){
         echo '<script>';
         echo 'alert("Wrong Password. Try again");';
-        echo 'window.location = "http://localhost/KrishiBimb/login.html";';
+        echo 'window.location = "login.html";';
         echo '</script>';
     }
     else if($cnt==3){
         echo '<script>';
         echo 'alert("Email Id not found. Try again");';
-        echo 'window.location = "http://localhost/KrishiBimb/login.html";';
+        echo 'window.location = "login.html";';
         echo '</script>';
     }
 ?>

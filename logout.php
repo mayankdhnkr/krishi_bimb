@@ -6,6 +6,6 @@
 
     echo '<script>';
         echo 'alert("Logged Out successfully. Byeee");';
-        echo 'window.location = "http://localhost/KrishiBimb/index.html";';
+        echo 'window.location = "index.html";';
         echo '</script>';
 ?>

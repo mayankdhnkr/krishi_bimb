@@ -11,13 +11,13 @@
 	    $result = mysqli_query($mysqli, "UPDATE crops SET crop_stock='$stock' WHERE id=$id");
 	    echo '<script>';
         echo 'alert("Crop bought Successfully.");';
-        echo 'window.location = "http://localhost/KrishiBimb/productpage.php";';
+        echo 'window.location = "productpage.php";';
         echo '</script>';
     }
     else{
         echo '<script>';
         echo 'alert("Sorry, Out of Stock.");';
-        echo 'window.location = "http://localhost/KrishiBimb/productpage.php";';
+        echo 'window.location = "productpage.php";';
         echo '</script>';
     }
     
